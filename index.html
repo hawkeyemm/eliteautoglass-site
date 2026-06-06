@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Auto Glass | Windshield Replacement Services</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .top-bar a { color: #fff; text-decoration: none; }
+
+    header {
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: #f4f4f4;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 68px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 22px;
+      max-width: 850px;
+      margin: 0 auto 30px;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d71920;
+      color: #fff;
+      padding: 16px 28px;
+      border-radius: 6px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 8px;
+    }
+
+    .btn-dark { background: #111; }
+
+    section { padding: 60px 0; }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      text-align: center;
+      margin-bottom: 25px;
+      line-height: 1.15;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service-box {
+      background: #f4f4f4;
+      padding: 28px 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      border: 1px solid #ddd;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .split h2 { text-align: left; }
+
+    .split p {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .image-card img,
+    .gallery-grid img,
+    .reviews img,
+    .map img {
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+    }
+
+    .gallery {
+      background: #f4f4f4;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .reviews {
+      text-align: center;
+    }
+
+    .reviews img {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto 30px;
+    }
+
+    .location {
+      background: #f4f4f4;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location h2 { text-align: left; }
+
+    .location h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .location p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: #d71920;
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta .btn { background: #111; }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 16px;
+    }
+
+    footer a { color: #fff; }
+
+    .sticky-call {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #d71920;
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 999;
+    }
+
+    @media (max-width: 800px) {
+      .service-grid,
+      .split,
+      .gallery-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .split h2,
+      .location h2 {
+        text-align: center;
+      }
+
+      .hero { padding: 45px 0; }
+      section { padding: 45px 0; }
+
+      body { padding-bottom: 60px; }
+
+      .sticky-call { display: block; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    Call Now: <a href="tel:8574660011">(857) 466-0011</a>
+  </div>
+
+  <header>
+    <div class="container">
+      <img src="logo.jpg" alt="Elite Auto Glass Logo" class="logo">
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Automotive Windshield Replacement Services</h1>
+        <p>Call for a no-hassle price quote and free estimate. 100% customer satisfaction. We can fix all make and model vehicles.</p>
+        <a class="btn" href="tel:8574660011">Call (857) 466-0011</a>
+        <a class="btn btn-dark" href="tel:8574660011">Get a Free Quote</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Services</h2>
+
+        <div class="service-grid">
+          <div class="service-box">All Makes and Models of Cars</div>
+          <div class="service-box">Windshield Replacement</div>
+          <div class="service-box">Back and Side Windows</div>
+          <div class="service-box">Fast and Reliable Auto Glass Replacement</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <h2>How It Works</h2>
+          <p>We at Elite Glass endeavor to provide our clients with quick and efficient service at their preferred schedule and location or even at our shop.</p>
+          <p>As much as possible, we want to lessen the hassle of windshield replacement by providing same-day service regardless of the car make and model.</p>
+          <p>As soon as an estimate is given, we can readily work on the job, and we will do so with the utmost professionalism.</p>
+          <p><strong>We are a licensed, certified, and fully-insured company.</strong></p>
+          <a class="btn" href="tel:8574660011">Schedule Your Replacement Appointment Now</a>
+        </div>
+
+        <div class="image-card">
+          <img src="1.jpg" alt="Elite Auto Glass windshield replacement service">
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <h2>Fast, Reliable Auto Glass Replacement</h2>
+
+        <div class="gallery-grid">
+          <img src="2.jpg" alt="Auto glass replacement service">
+          <img src="3.jpg" alt="Windshield replacement service">
+          <img src="4.jpg" alt="Vehicle glass replacement">
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2>Don’t Just Take Our Word For It</h2>
+        <img src="reviews.jpg" alt="Elite Auto Glass customer reviews">
+        <a class="btn" href="tel:8574660011">Call Now For a Free Quote</a>
+      </div>
+    </section>
+
+    <section class="location">
+      <div class="container location-grid">
+        <div>
+          <h2>Shop Location</h2>
+          <h3>Whitman, Massachusetts, United States</h3>
+          <p>846 Temple St, Whitman, MA 02382</p>
+          <a class="btn" href="tel:8574660011">Call (857) 466-0011</a>
+        </div>
+
+        <div class="map">
+          <img src="map.jpg" alt="Elite Auto Glass location map">
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Quality, Affordable Work Done for the Best Price Around.</h2>
+        <a class="btn" href="tel:8574660011">Call (857) 466-0011</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Copyright 2024 | All rights reserved | <a href="tel:7813804020">781-380-4020</a></p>
+  </footer>
+
+  <a class="sticky-call" href="tel:8574660011">Tap to Call: (857) 466-0011</a>
+
+</body>
+</html>
